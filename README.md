@@ -1,2 +1,2 @@
 # technologies
-Repository consisting test scripts for various technologies  
+Repository consisting of test scripts for various technologies  
