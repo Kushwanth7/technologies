@@ -17,4 +17,12 @@ Single Threaded but Highly Scalable - Node.js uses a single threaded model with 
 No Buffering - Node.js applications never buffer any data. These applications simply output the data in chunks.
 
 
- 
+Where to use Node.js
+Node.js can be used best in any of the below applications
+1) I/O bound Applications
+
+2) Data Streaming and Data Intensive Real time Applications
+
+3) JSON API based Applications and Single Page Applications
+
+Node.js should generally not be used in CPU intensive applications
