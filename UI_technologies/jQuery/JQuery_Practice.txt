@@ -1,1 +1,5 @@
-# JQuery Practice
+# JQuery 
+1) ready function is run as soons as the page is loaded
+2) All jQuery statements start with the $ sign
+3) jquery generally manipulates html elements
+4) Use the dot operator for selecting classes from the html elements just like CSS
