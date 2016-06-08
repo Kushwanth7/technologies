@@ -1,5 +1,44 @@
 # JQuery 
+
+Every HTML element has a parent element from which it inherits properties.
+
+
 1) ready function is run as soons as the page is loaded
 2) All jQuery statements start with the $ sign
 3) jquery generally manipulates html elements
 4) Use the dot operator for selecting classes from the html elements just like CSS
+5) For selecting elements with id make use of the hash operator  just like in the case of CSS
+ You can select all of the elements in the HTML by the following way
+ a) to select the class just use the dot operator, like ".class"
+ b) To select the element with an id associated make use of the # operator like "#id"
+ c) To select the entire set of html elements do it as the following example, "button" selects all the button elements
+
+Most of the scenarios there will not be neat id's to work with, jQury has another way aroung dealing with this
+jQuery uses CSS Selectors to target elements. target:nth-child(M) css selector allows you to select all the Mth elements with the target class or element type.
+Example for a div element is as below
+    $("#left-well:nth-child(2)").addClass("bounce");
+    $("#right-well:nth-child(2)").addClass("bounce");
+You can also use nth child in cases where you have named your ids accordinto some numerical pattern
+Suppose you have ids as target1, target2 and target3, then to selct the target 2 element you can use  $(".target:nth-child(2)") and later perform actions on it
+
+Similarly you can select even and odd elements accordingly, to select the odd elements use $(".target:odd"), Note that jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element, fourth element, and so on.
+
+
+ IN general
+ 1) for selcting an element it is one of ("button") or ("#id") or (".class"), 
+ 2) Once the particular element is selected then you go ahead and do some operations on them
+
+ Some of the useful classes of jquery, each of these classes can be applied once the classes are selected from the above mentioned method
+Function chaining is an important concept in jQury and many of the belwo functions can be chained together, this is one of the most important features of jQuery
+
+ a) prop()
+ b) addClass()
+ c) removeClass()
+ d) html()
+ e) text()
+ f) remove()
+ g) appendTo()
+ h) clone()
+ i) parent()
+ j) children()
+
