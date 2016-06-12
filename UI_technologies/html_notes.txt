@@ -1,0 +1,8 @@
+You can include css elemenst in the style attributes
+
+Div is used to group a set of elements witha set of classes
+Span is used to group of a single html element
+
+Class is generally accessed by the dot operator
+Id's are generally accessed by the # operator
+
