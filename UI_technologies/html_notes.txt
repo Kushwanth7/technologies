@@ -1,3 +1,37 @@
+Comments in html should be included between <!-- and -->
+
+CSS elements can be included between the style element tags
+<style>
+</style>
+Within the style tag, use the below syntax to refer to each of the html elements
+h2 {color:blue;}
+
+You can also create a css class so that the styling can be applied to a range of html elements
+An example css class created is as below
+.blue-text {
+    color: blue;
+  }
+Classes are created within the style tag using the dot operator, then you can include this class in the html elements by setting the class attribute appropriately.
+
+The div element is a general purpose container for other elements.
+
+The div element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.
+
+Each HTML element can also have an id attribute. There are several benefits to using id attributes
+
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice.
+
+CSS elements can also be styled using the id attributes, below is the same as to how this can be done
+#example {
+  background-color: green;
+}
+
+Include the above between the style tags
+
+Then to get the style for a particular html element, call the above using the id attribute,
+
+<h2 id = "example"> -> this gets the style of example to h2 element
+
 You can include css elemenst in the style attributes
 
 Div is used to group a set of elements witha set of classes
