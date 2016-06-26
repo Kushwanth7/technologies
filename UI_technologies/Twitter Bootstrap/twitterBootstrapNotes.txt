@@ -1,0 +1,27 @@
+Twitter Bootstrap is the most popular front end framework in the recent time. 
+It is sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. 
+It uses HTML, CSS and Javascript.
+Bootstrap uses grid structure, grids in web design help organise and structure content. It also makes the websites easy to scan and also reduces the cognitive load on users
+Bootstrap grid system in a short note
+1) Rows must be placed within a .container class for proper alignment and padding
+2) These rows must be used for creating horizontal group of columns 
+3) Any content should be placed within the columns and only columns should be immediate children of the rows
+4) You can use pre-defined classes like .row and .col-xs-4 for making the grid layouts
+5) There should be 12 columns, for example, three equal columns would use three .col-xs-4. For each row the columns must add upto 12
+
+Basic grid structure for Twitter Bootstrap is as below
+
+<div class = "container">
+   
+   <div class = "row">
+      <div class = "col-*-*"></div>
+      <div class = "col-*-*"></div>
+   </div>
+   
+   <div class = "row">...</div>
+	
+</div>
+
+<div class = "container">
+   ....
+</div>
