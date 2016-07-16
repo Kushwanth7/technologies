@@ -1,0 +1,2 @@
+Important notes
+1) To delete a node in the linked list, jsut set the reference to that node as null, it will be deleted automatically by the Garbage collector
