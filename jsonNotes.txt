@@ -1,0 +1,56 @@
+To access the properties of a json object that have a space in their name, make use of the bracket notation
+
+Javascript Objects have their own attributes, called properties, and their own functions, called methods.
+
+this keyword is used to reference public properties of the current object.
+
+private properties and private methods, which aren't accessible from outside the object can also be created.
+
+For this create the variable inside the constructor using the var keyword, instead of creating it as a property of this.
+
+Use the var keyword to make anything associated with the object as private and the this keyword to make anything associated with the object as public
+
+
+One of the convenient ways to iterate through an array is by making use of the map method
+
+Below is an example
+var oldArray = [1, 2, 3];
+var timesFour = oldArray.map(function(val){
+  return val * 4;
+});
+console.log(timesFour); // returns [4, 8, 12]
+console.log(oldArray);  // returns [1, 2, 3]
+
+
+Reduce method
+
+The array method reduce is used to iterate through an array and condense it into one value.
+
+To use reduce you pass in a callback whose arguments are an accumulator (in this case, previousVal) and the current value (currentVal).
+
+The accumulator is like a total that reduce keeps track of after each operation. The current value is just the next element in the array you're iterating through.
+
+reduce has an optional second argument which can be used to set the initial value of the accumulator. If no initial value is specified it will be the first array element and currentVal will start with the second array element.
+
+Here is an example of reduce being used to subtract all the values of an array:
+
+var singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal - currentVal;
+}, 0);  
+
+
+Filter method
+
+The filter method is used to iterate through an array and filter out elements where a given condition is not true.
+
+filter is passed a callback function which takes the current value (we've called that val) as an argument.
+
+Any array element for which the callback returns true will be kept and elements that return false will be filtered out.
+
+The following code is an example of using filter to remove array elements that are equal to five:
+
+Note: We omit the second and third arguments since we only need the value
+
+array = array.filter(function(val) {
+  return val !== 5;
+});
