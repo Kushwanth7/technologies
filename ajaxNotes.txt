@@ -1,0 +1,65 @@
+Ajax is the technology that is used to update the html with the data we get from the backend api's.
+AJAX is not a new programming language.
+AJAX is a technique for creating fast and dynamic web pages.
+AJAX is about updating parts of a web page, without reloading the whole page.
+AJAX = Asynchronous JavaScript and XML
+AJAX is a technique for creating fast and dynamic web pages.
+AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+Classic web pages, (which do not use AJAX) must reload the entire page if the content should change.
+
+AJAX is based on internet standards, and uses a combination of:
+XMLHttpRequest object (to retrieve data from a web server)
+JavaScript/DOM (to display/use the data)
+
+Google Suggest is using AJAX to create a very dynamic web interface: When you start typing in Google's search box, a JavaScript sends the letters off to a server and the server returns a list of suggestions.
+
+
+
+Api's are nothing but tools that computers use to interat with one another 
+Almost all of the web transfer happens through JSON format
+$.getJSON is used to pull the data from api
+json.filter function can be used to filter out all the unrequired data
+
+
+The XMLHttpRequest Object
+All modern browsers support the XMLHttpRequest object.
+
+The XMLHttpRequest object is used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+variable = new XMLHttpRequest()
+
+To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
+
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();
+
+open(method, url, async) ->	Specifies the type of request,method: the type of request: GET or POST,url: the server (file) location,async: true (asynchronous) or false (synchronous)
+
+send()	Sends the request to the server (used for GET)
+
+send(string)	Sends the request to the server (used for POST)
+
+GET or POST?
+GET is simpler and faster than POST, and can be used in most cases.
+
+However, always use POST requests when:
+
+A cached file is not an option (update a file or database on the server).
+Sending a large amount of data to the server (POST has no size limitations).
+Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
+
+
+A simple GET request:
+
+Example
+xhttp.open("GET", "demo_get.asp", true);
+xhttp.send();
+
+
+In the example above, you may get a cached result. To avoid this, add a unique ID to the URL:
+
+Example
+xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true);
+xhttp.send();
+
+

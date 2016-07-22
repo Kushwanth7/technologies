@@ -13,12 +13,12 @@ Every HTML element has a parent element from which it inherits properties.
  b) To select the element with an id associated make use of the # operator like "#id"
  c) To select the entire set of html elements do it as the following example, "button" selects all the button elements
 
-Most of the scenarios there will not be neat id's to work with, jQury has another way aroung dealing with this
+Most of the scenarios there will not be neat id's to work with, jQuery has another way around dealing with this
 jQuery uses CSS Selectors to target elements. target:nth-child(M) css selector allows you to select all the Mth elements with the target class or element type.
 Example for a div element is as below
     $("#left-well:nth-child(2)").addClass("bounce");
     $("#right-well:nth-child(2)").addClass("bounce");
-You can also use nth child in cases where you have named your ids accordinto some numerical pattern
+You can also use nth child in cases where you have named your ids according to some numerical pattern
 Suppose you have ids as target1, target2 and target3, then to selct the target 2 element you can use  $(".target:nth-child(2)") and later perform actions on it
 
 Similarly you can select even and odd elements accordingly, to select the odd elements use $(".target:odd"), Note that jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element, fourth element, and so on.
@@ -42,3 +42,15 @@ Function chaining is an important concept in jQury and many of the belwo functio
  i) parent()
  j) children()
 
+
+$(document).ready() function ensures that all of the code inside the function executes only after the entire page is loaded
+
+To add a listener function to any of the html triggered actions, follow the below jquery syntax
+$("#getMessage").on("click", function(){
+
+});
+
+1) $
+2) html selector
+3) jquery action
+4) describe the action and add the callback function
