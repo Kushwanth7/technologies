@@ -7,19 +7,3 @@ AngularJS is distributed as a JavaScript file, and can be added to a web page wi
 Angular js expressions are written inside double braces {{Angular js expression}}
 
 AngularJS binds data to HTML using Expressions.
-
-Two ways of binding application data with html using Angular js
-
-<div ng-app="" ng-init="quantity=1;cost=5">
-
-<p>Total in dollar: {{ quantity * cost }}</p>
-
-</div>
-
-2nd Option
-
-<div ng-app="" ng-init="quantity=1;cost=5">
-
-<p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
-
-</div>
