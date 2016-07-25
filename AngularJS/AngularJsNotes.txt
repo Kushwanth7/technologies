@@ -7,3 +7,59 @@ AngularJS is distributed as a JavaScript file, and can be added to a web page wi
 Angular js expressions are written inside double braces {{Angular js expression}}
 
 AngularJS binds data to HTML using Expressions.
+
+
+Angola js extensa HTML directives using the ng directives, this means that once angular js is included in the script, ng directives are as good as any other html keywords. This means to say that AngularJS directives are HTML attributes with an ng prefix.
+
+
+
+Some of the common ng directives are
+1) ng-app, this directive is used to define an angular js application
+2) ng-model directive is used to bind the value of html controls(such as input, select) etc to application data
+3) ng-bind directive binds application data to the html view
+
+Make use of ng-init directive to initialize angular-js variables
+
+Any angular js expression can be written in between these flower braces {{}}
+The above performs the same action as the ng-bind directive
+
+ng-app directive defines the angular js application
+ng-control directive controls the angular js application, you can associate a controller function with the variable associated with the ng-control directive
+
+Register the angular js application using the angular module
+example -> var app = angular.module('myApp', []);
+
+Example way of registering a controller is as below, the call back function associated with the controller variable is the controller function
+
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+
+The div element must have the an-app directive associated with it for the angular expressions under it to get resolved 
+
+Angular js expressions can be put anywhere in the html page, an example of the same is as below
+
+Some differences between angular js expressions and javascript expressions
+Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.
+
+Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.
+
+AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.
+
+AngularJS expressions support filters, while JavaScript expressions do not.
+
+
+
+An AngularJS module defines an application.
+The module is a container for the different parts of an application.
+The module is a container for the application controllers.
+Controllers always belong to a module.
+
+
+You can create your own angular js directives, you can do so after you have registered your angular js application
+ You generally put the application module and the controller module in two different javascript files
+
+
+It is recommended to put the angular js library in the head or at the beginning of the body
+
