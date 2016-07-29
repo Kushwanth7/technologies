@@ -7,3 +7,9 @@ Node.js applications are written in JavaScript, and can be run within the Node.j
 Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
 
 Node.js = Runtime Environment + JavaScript Library
+
+Nodes advantages
+1) Asynchronous and Event Driven
+2) Very fast
+3) Single Threaded but Highly Scalable
+4) No Buffering
