@@ -56,6 +56,9 @@ The module is a container for the different parts of an application.
 The module is a container for the application controllers.
 Controllers always belong to a module.
 
+First create a module using the angular module application
+once this module is created associate a controller with it
+You can also associate directives with the controllers
 
 You can create your own angular js directives, you can do so after you have registered your angular js application
  You generally put the application module and the controller module in two different javascript files
@@ -64,4 +67,51 @@ You can create your own angular js directives, you can do so after you have regi
 It is recommended to put the angular js library in the head or at the beginning of the body
 
 
+Looping in Angular js is with the help of the ng-repeat directive
 
+<div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+  <ul>
+    <li ng-repeat="x in names">
+      {{ x }}
+    </li>
+  </ul>
+</div>
+
+This creates a list of items present in the names list
+
+The ng-repeat directive actually clones HTML elements once for each item in a collection.
+
+AngularJS is perfect for database CRUD (Create Read Update Delete) applications.
+
+The ng-app directive defines the root element of an AngularJS application.
+The ng-app directive will auto-bootstrap (automatically initialize) the application when a web page is loaded.
+The ng-init directive defines initial values for an AngularJS application.
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+
+Directives in Angular js
+to create your own directive
+1) Create a module
+2) Then associate a directive with that module, the directive name must be in camel case when creating it, but should be separated by - when invoking it.
+
+To invoke a directive from a comment include the restrict : “M” statement in the directive definition
+
+<div class="w3-test-directive"></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        restrict : "C",
+        template : "<h1>Made by a directive!</h1>"
+    };
+});
+</script>
+
+Restrict attribute tells how the element has to be invoked
+E for Element name
+A for Attribute
+C for Class
+M for Comment
+
+default is EA
