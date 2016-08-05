@@ -161,3 +161,12 @@ The scope is a JavaScript object with properties and methods, which are availabl
 Make use of filters, generally using the pipe (|) to add filters to the angular js expressions
 
 
+Services in Angular js
+
+A service in Angular js is nothing but a function or object that is available for and is limited to only the current angular js application
+
+Example service is the $location service, it returns the current location of the webpage
+
+Using the $http service you can make http requests to the server and get the results
+
+
