@@ -79,7 +79,7 @@ Looping in Angular js is with the help of the ng-repeat directive
 
 This creates a list of items present in the names list
 
-The ng-repeat directive actually clones HTML elements once for each item in a collection.
+The ng-repeat directive actually clones HTML elements once for each item in a collection. It clones the html from the point where ever ng-repeat is mentioned.
 
 AngularJS is perfect for database CRUD (Create Read Update Delete) applications.
 
@@ -95,6 +95,8 @@ to create your own directive
 2) Then associate a directive with that module, the directive name must be in camel case when creating it, but should be separated by - when invoking it.
 
 To invoke a directive from a comment include the restrict : “M” statement in the directive definition
+
+Angular js directives help you to create new html tags and thereby new html elements
 
 <div class="w3-test-directive"></div>
 
@@ -113,6 +115,8 @@ E for Element name
 A for Attribute
 C for Class
 M for Comment
+
+there is also a link attribute that lets you create interactive directives that respond to user actions
 
 default is EA
 
