@@ -1,0 +1,12 @@
+Angular material is the UI library for angular js
+
+Some of the greatest advantages of using Angular material is
+Responsive design
+1) Angular Material has in-built responsive designing so that the website created using Angular Material will redesign itself as per the device size.
+2) Angular Material classes are created in such a way that the website can fit any screen size.
+3) The websites created using Angular Material are fully compatible with PC, tablets, and mobile devices.
+4) It is designed considering the fact that it is much easier to add new CSS rules than to overwrite existing CSS rules.
+5) It supports shadows and bold colors.
+6) The colors and shades remain uniform across various platforms and devices.
+
+md-autocomplete angular js directive
