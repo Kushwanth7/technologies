@@ -10,3 +10,4 @@ Responsive design
 6) The colors and shades remain uniform across various platforms and devices.
 
 md-autocomplete angular js directive
+
