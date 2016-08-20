@@ -11,3 +11,6 @@ Responsive design
 
 Angular material is the alternate for Twitter Bootstrap
 
+Angular material directives
+1) md-autocomplete, an Angular Directive, is used as a special input control with an inbuilt drop-down to show all possible matches to a custom query.
+2) 
