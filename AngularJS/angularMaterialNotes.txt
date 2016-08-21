@@ -13,4 +13,10 @@ Angular material is the alternate for Twitter Bootstrap
 
 Angular material directives
 1) md-autocomplete, an Angular Directive, is used as a special input control with an inbuilt drop-down to show all possible matches to a custom query.
-2) 
+2) md-card is an Angular Directive, it’s a container directive and is used to draw cards in AngularJs application
+3) Layout directive is used on a div element to specify layout direction for its children. Layout takes in the following values -> 
+a) row -> Items are arranged horizontally with a max height of 100% and max width is the width of the items in the container
+b) column -> Items are arranged vertically with a max width of 100% and max-height is the height of the items in the container
+flex specifies the height of the row when used with layout = column
+flex specifies the width of the column when used with layout = row
+
