@@ -20,3 +20,39 @@ b) column -> Items are arranged vertically with a max width of 100% and max-heig
 flex specifies the height of the row when used with layout = column
 flex specifies the width of the column when used with layout = row
 
+Angular material layout
+CSS layout is historically notable as the foremost cause of countries going to war, mental health issues, and countless physical confrontations between humans and technological devices. Angular Material has redeemed the sins of our CSS patriarchs by making layout simple. At some point or another, we have all Googled “How to layout two divs side by side” and eventually “How to center element vertically in CSS”.
+
+Because Angular Material is based on CSS flexbox, solving these historically perplexing questions can be achieved in just a few lines of HTML.
+
+Allow me to start with the chore of laying out two elements side by side in HTML. Create a div with a layout attribute set to row and then two (or N really) child elements with a flex attribute on them.
+
+<div layout="row">
+<div flex>First item in row</div>
+<div flex>Second item in row</div>
+</div>
+And done! It was just that easy. But what if we want the first child to take just a portion of the page because it is navigation and the second child to take up the rest? Just add a number value to the flex attribute and that is the percentage of the available layout that that element will fill. Easy mode.
+
+<div layout="row">
+<div flex="20">
+    First Half
+  </div>
+<div flex>
+    Second Half
+  </div>
+</div>
+Responsive Layout
+And what about responsive layout? There is an entire set of layout options available to accommodate responsive layout.
+
+For instance, what if we had two child elements that we wanted to live side by side unless we were on a mobile device and then we wanted them to stack. All we would need to do in this case is add an attribute calling out the layout for the small form factor. In this case, we shift from a row layout to a column layout by adding layout-sm=”column” to our parent container.
+
+<div layout="row" layout-sm="column">
+<div flex>
+    I'm above on mobile, and to the left on larger devices.
+  </div>
+<div flex>
+    I'm below on mobile, and to the right on larger devices.
+  </div>
+</div>
+
+
