@@ -9,7 +9,7 @@ Angular js expressions are written inside double braces {{Angular js expression}
 AngularJS binds data to HTML using Expressions.
 
 
-Angola js extensa HTML directives using the ng directives, this means that once angular js is included in the script, ng directives are as good as any other html keywords. This means to say that AngularJS directives are HTML attributes with an ng prefix.
+Angolar js extends HTML directives using the ng directives, this means that once angular js is included in the script, ng directives are as good as any other html keywords. This means to say that AngularJS directives are HTML attributes with an ng prefix.
 
 
 
@@ -173,4 +173,4 @@ Example service is the $location service, it returns the current location of the
 
 Using the $http service you can make http requests to the server and get the results
 
-
+Two way data binding applies to only variables that are bound to $scope
