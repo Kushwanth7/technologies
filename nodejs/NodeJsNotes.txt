@@ -27,3 +27,72 @@ Node.js can be used best in any of the below applications
 
 Node.js should generally not be used in CPU intensive applications
 
+
+Callbacks are an important feature of Node.js, it is what allows Node.js to scale pretty well.
+Callback functions are called at the completion of a given task
+
+Node.js is a single threaded application but implements concurrency by a concept of events and callbacks. Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.
+
+In Node Application, any async function accepts a callback as a last parameter and the callback function accepts error as a first parameter. 
+
+example
+var fs = require("fs");
+
+fs.readFile('input.txt', function (err, data) {
+   if (err){
+      console.log(err.stack);
+      return;
+   }
+   console.log(data.toString());
+});
+console.log("Program Ended");
+
+
+EventEmitter provides multiple properties like on and emit. on property is used to bind a function with the event and emit is used to fire an event.
+
+// Import events module
+var events = require('events');
+// Create an eventEmitter object
+var eventEmitter = new events.EventEmitter();
+
+var listner1 = function listner1() {
+   console.log('listner1 executed.');
+}
+
+// listener #2
+var listner2 = function listner2() {
+  console.log('listner2 executed.');
+}
+
+// Bind the connection event with the listner1 function
+eventEmitter.addListener('connection', listner1);
+
+// Bind the connection event with the listner2 function
+eventEmitter.on('connection', listner2);
+
+var eventListeners = require('events').EventEmitter.listenerCount(eventEmitter,'connection');
+console.log(eventListeners + " Listner(s) listening to connection event");
+
+// Fire the connection event 
+eventEmitter.emit('connection');
+
+// Remove the binding of listner1 function
+eventEmitter.removeListener('connection', listner1);
+console.log("Listner1 will not listen now.");
+
+// Fire the connection event 
+eventEmitter.emit('connection');
+
+eventListeners = require('events').EventEmitter.listenerCount(eventEmitter,'connection');
+console.log(eventListeners + " Listner(s) listening to connection event");
+
+console.log("Program Ended.");
+
+Output ->
+2 Listner(s) listening to connection event
+listner1 executed.
+listner2 executed.
+Listner1 will not listen now.
+listner2 executed.
+1 Listner(s) listening to connection event
+Program Ended.
