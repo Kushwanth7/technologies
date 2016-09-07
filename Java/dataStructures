@@ -1,0 +1,52 @@
+#Java datastructures
+
+Java Collections (More Information -> http://www.tutorialspoint.com/java/java_collections.htm)
+Prior to java 2, there were adhoc classes such as Dictionary, Vector, Stack and Properties, these were used to store and manipulate objects
+The way these manipulated objects differed from one another, so the usage of Vector was different from Properties.
+
+To be consistent across all these classes Collections framework was designed
+ the entire collections framework is designed around a set of standard interfaces.
+ Several standard implementations such as LinkedList, HashSet, and TreeSet, of these interfaces are provided
+ which can be used as-is or own implementations can also be implemented
+
+ A collections framework is a unified architecture for representing and manipulating collections.
+ All collections frameworks contain the following:
+
+Interfaces: These are abstract data types that represent collections.
+Interfaces allow collections to be manipulated independently of the details of their representation.
+In object-oriented languages, interfaces generally form a hierarchy.
+
+Implementations, i.e., Classes: These are the concrete implementations of the collection interfaces.
+In essence, they are reusable data structures.
+
+Algorithms: These are the methods that perform useful computations, such as searching and sorting,
+on objects that implement collection interfaces.
+The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of
+the appropriate collection interface.
+
+Collection Interface is at the top of the collections heirarchy and enables to work with group of objects, some of the functions
+such as add, addAll, contains, clear are all part of the collections Interface
+
+Some of the standard collection classes that Java provides are LinkedList, HashMap, HashSet
+
+Often, you will want to cycle through the elements in a collection. For example, you might want to display each element.
+The easiest way to do this is to employ an iterator, which is an object that implements either the Iterator or the ListIterator interface.
+Iterator enables you to cycle through a collection, obtaining or removing elements.
+ListIterator extends Iterator to allow bidirectional traversal of a list and the modification of elements.
+
+Java Comparator
+Both TreeSet and TreeMap store elements in sorted order.
+However, it is the comparator that defines precisely what sorted order means.
+This interface lets us sort a given collection any number of different ways.
+Also this interface can be used to sort any instances of any class (even classes we cannot modify).
+
+The Java collections framework gives the programmer access to prepackaged data structures as well as to algorithms for manipulating them.
+
+A collection is an object that can hold references to other objects.
+The collection interfaces declare the operations that can be performed on each type of collection.
+
+The classes and interfaces of the collections framework are in package java.util.
+
+ArrayList
+
+ArrayList extends an abstract class and implements the list interface and the list interface extends the java collection.
