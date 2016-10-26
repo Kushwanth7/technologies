@@ -1,0 +1,42 @@
+//Android Notes
+
+View Groups
+
+Layouts
+
+Linear layout is a view group that lays out child views in either horizontal or vertical orientation, this is dependent on the
+android:orientation attribute. To specify the size of the view make use of android:layout_width and android_layout_height attributes
+
+For it to occupy the entire screen area, set that value to match_parent
+
+android:id is the unique identifier for the view, that can be used to reference the object from the app code
+
+to access any resource name that is present in the xml you have to use the @ symbol,
+
+to identify any resource in your app, just use the +id attribute
+
+An intent is an object that provides runtime binding between two different components such as two different activities,
+
+An intent is like an app's intent to do something, you can use intents to do a wide variety of tasks
+
+Intent constructor takes two parameters, first parameter is the context, if you are calling it from an activity you can use "this",
+because activity is a subclass of context, the next argument is the class of the app component for which the intent has to be delivered
+
+Intent generally carries data as key value pairs, the component receiving the intent uses the key to retrieve the value
+
+StartActivity starts an activity specified by the intent object
+
+Getintent will grab the intent that started the activity in the first place, the thing you have to understand is that every activity
+is started by an intent regardless of how the user got there.
+
+/****
+Most important
+You can programmatically create view objects such as button, textView, edit text, etc and inject them into the layout
+This can be done programmatically
+****/
+
+
+For doing any network related operations in Android, make use of Volley. Using the continuance method of Volley you can create a request queue and you can pass request objects to that request queue
+Request queue will handle the network operations and also parse the responses for you.
+Volley passes the response back to the main thread for processing.
+

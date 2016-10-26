@@ -50,3 +50,6 @@ The classes and interfaces of the collections framework are in package java.util
 ArrayList
 
 ArrayList extends an abstract class and implements the list interface and the list interface extends the java collection.
+
+In backtracking problems, if you are creating a new array list and not using the existing
+ one in base conditions because existing one keeps changing and getting manipulated, if you include that in the list in the end all that remains is the empty set.
