@@ -1,0 +1,32 @@
+//KMP Algorithm
+
+1) Proper Prefix - All the characters with one or more cut off at the end, S, Sn,Sna,Snap are all proper prefixes of the word snape
+2) Proper Suffix - All the characters in a string with one or more curt off the beginning are all proper suffixes. agird, grid, rid,id,d are
+all proper suffixes of the word Hagrid
+3) For an entry in the table, it is the length of the longest prefix of the pattern or sub pattern that matches the proper suffix
+of the same pattern or sub pattern.
+4) For constructing the prefix table, at each location compute the length of the longest prefix that matches a proper prefix
+(http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/) look at this article to understand the meaning of proper prefix and
+proper suffix
+5) Once the prefix table is constructed, start matching the pattern with the string, find the count of the partial match,
+if table[count of partial match] > 1, then shift the pattern by count of partial match - table[count of partial match - 1]
+
+Code for building the prefix table
+//Array prefix consists of the prefix values
+public void buildPrefixTable(String s)
+{
+  int[] prefix = new int[s.length()];
+  prefix[0] = 0;
+  for(int i=1;i<s.length();i++)
+  {
+      while(j > 0 && s.charAt(i) != s.charAt(j))
+      {
+        j = prefix[j-1];
+      }
+      if(s.charAt(j) == s.charAt(i))
+      {
+        j++;
+      }
+      prefix[i] = j;
+  }
+}
